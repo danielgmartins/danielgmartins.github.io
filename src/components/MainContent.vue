@@ -1,10 +1,10 @@
 <template>
   <b-container fluid id="hello">
     <b-container class="banner">
-      <p>
+      <p class="title">
         DANIEL <span>MARTINS</span>
       </p>
-      <p>
+      <p class="subtitle">
         Computer Science Student
       </p>
     </b-container>
@@ -197,5 +197,11 @@ a:hover {
 h5 {
   font-weight: 100;
   cursor: pointer;
+}
+
+.banner {
+  .subtitle{
+    font-size: 25px;
+  }
 }
 </style>
