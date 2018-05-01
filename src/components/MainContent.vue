@@ -23,13 +23,33 @@
 
 
     <b-container class="description">
-      <h2> Skills </h2>
+      <h2 class="title-description"> Languages </h2>
       <b-card-group deck class="mb-3">
+          <b-card class="skill-card" >
+            <img class="img-fluid" src="../assets/images/C.png"/>
+            <br>
+            C
+          </b-card>
+          <b-card class="skill-card" >
+            <img class="img-fluid" src="../assets/images/java.png"/>
+            <br>
+            Java
+          </b-card>
           <b-card class="skill-card" >
             <img class="img-fluid" src="../assets/images/python.png"/>
             <br>
             Python
           </b-card>
+          <b-card class="skill-card" >
+            <img class="img-fluid" src="../assets/images/javascript.png"/>
+            <br>
+            Javascript
+          </b-card>
+      </b-card-group>
+    </b-container>
+    <b-container class="description">
+      <h2> Tools and Framworks </h2>
+      <b-card-group deck class="mb-3">
           <b-card class="skill-card">
             <img class="img-fluid" src="../assets/images/django.png"/>
             <br>
