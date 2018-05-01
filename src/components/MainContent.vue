@@ -61,14 +61,24 @@
             Vue.js
           </b-card>
           <b-card class="skill-card">
+            <img class="img-fluid" src="../assets/images/git.png"/>
+            <br>
+            Git
+          </b-card>
+          <b-card class="skill-card">
             <img class="img-fluid" src="../assets/images/mysql.png"/>
             <br>
             MySQL
           </b-card>
           <b-card class="skill-card">
-            <img class="img-fluid" src="../assets/images/git.png"/>
+            <img class="img-fluid" src="../assets/images/mongodb.png"/>
             <br>
-            Git
+            MongoDB
+          </b-card>
+          <b-card class="skill-card">
+            <img class="img-fluid" src="../assets/images/neo4j.png"/>
+            <br>
+            Neo4j
           </b-card>
       </b-card-group>
     </b-container>
