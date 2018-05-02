@@ -10,9 +10,9 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import '../static/vendor/font-awesome/svg-with-js/js/fontawesome-all'
 
-import KsVueScrollmagic from 'ks-vue-scrollmagic'
+// import KsVueScrollmagic from 'ks-vue-scrollmagic'
 
-Vue.use(KsVueScrollmagic)
+// Vue.use(KsVueScrollmagic)
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false
 
