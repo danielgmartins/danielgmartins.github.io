@@ -2,16 +2,20 @@
   <div id="app">
     <top-header/>
     <router-view/>
-    <p class="footer-message"> Made with <i class="fas fa-heart"></i> by Daniel Martins</p>
+
+    <footer-block/>
+    
   </div>
 </template>
 
 <script>
 import TopHeader from '@/components/TopHeader' 
+import Footer from '@/components/Footer'
 export default {
   name: 'App',
   components: {
     "top-header": TopHeader,
+    "footer-block": Footer,
   },
 }
 </script>

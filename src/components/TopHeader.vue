@@ -28,7 +28,7 @@
   </b-container>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 
 .header-outter {
   width: 100%;

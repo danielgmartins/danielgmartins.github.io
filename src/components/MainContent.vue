@@ -1,17 +1,10 @@
 <template>
   <b-container fluid id="hello">
-    <b-container class="banner">
-      <p class="title">
-        DANIEL <span>MARTINS</span>
-      </p>
-      <p class="subtitle">
-        Computer Science Student
-      </p>
-    </b-container>
+    <banner/> 
 
     <b-container fluid class="separation">
-      <hr style="border-color: rgba(255,255,255,0.05); max-width: 200px">
-      <!-- <i class="fas fa-chevron-down"></i> -->
+    <hr style="border-color: rgba(255,255,255,0.05); max-width: 200px">
+    <!-- <i class="fas fa-chevron-down"></i> -->
     </b-container>
 
     <!-- <b-container class="description">
@@ -21,87 +14,37 @@
       </p>
     </b-container> -->
 
-
-    <b-container class="description">
-      <h2 class="title-description"> Languages </h2>
-      <b-card-group deck class="mb-3">
-          <b-card class="skill-card" >
-            <img class="img-fluid" src="../assets/images/C.png"/>
-            <br>
-            C
-          </b-card>
-          <b-card class="skill-card" >
-            <img class="img-fluid" src="../assets/images/java.png"/>
-            <br>
-            Java
-          </b-card>
-          <b-card class="skill-card" >
-            <img class="img-fluid" src="../assets/images/python.png"/>
-            <br>
-            Python
-          </b-card>
-          <b-card class="skill-card" >
-            <img class="img-fluid" src="../assets/images/javascript.png"/>
-            <br>
-            Javascript
-          </b-card>
-      </b-card-group>
-    </b-container>
-    <b-container class="description">
-      <h2> Tools and Frameworks </h2>
-      <b-card-group deck class="mb-3">
-          <b-card class="skill-card">
-            <img class="img-fluid" src="../assets/images/django.png"/>
-            <br>
-            Django
-          </b-card>
-          <b-card class="skill-card" >
-            <img class="img-fluid" src="../assets/images/vuejs.png"/>
-            <br>
-            Vue.js
-          </b-card>
-          <b-card class="skill-card">
-            <img class="img-fluid" src="../assets/images/git.png"/>
-            <br>
-            Git
-          </b-card>
-          <b-card class="skill-card">
-            <img class="img-fluid" src="../assets/images/mysql.png"/>
-            <br>
-            MySQL
-          </b-card>
-          <b-card class="skill-card">
-            <img class="img-fluid" src="../assets/images/mongodb.png"/>
-            <br>
-            MongoDB
-          </b-card>
-          <b-card class="skill-card">
-            <img class="img-fluid" src="../assets/images/neo4j.png"/>
-            <br>
-            Neo4j
-          </b-card>
-      </b-card-group>
-    </b-container>
+    <card-deck :data="skills" />
+    
+    <card-deck :data="languages" />
 
     <b-container class="description">
       <h2> Contact Me At </h2>
       <a href="mailto:danielgcmartins@gmail.com"><h5>danielgcmartins@gmail.com</h5></a>
     </b-container>
 
-  
   </b-container>
-  
 </template>
 
 <script>
-import Skills from '@/../src/assets/data/skills.json'
+import Banner    from './Banner'
+import Footer    from './Footer'
+import CardDeck  from './CardDeck'
+import Skills    from '@/../src/assets/data/skills.json'
+import Languages from '@/../src/assets/data/languages.json'
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
       skills: Skills,
+      languages: Languages,
     }
+  },
+  components : {
+    Banner,
+    "footer-block": Footer,
+    "card-deck": CardDeck,
   }
 }
 </script>
@@ -147,7 +90,8 @@ export default {
         color:white;
       }
       img {
-        max-width: 50px;
+        height: 50px;
+        width: 50px;
         margin-bottom: 20px;
       }
       padding:{

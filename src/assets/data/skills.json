@@ -1,19 +1,21 @@
-[
-  {
-    "name": "VueJs",
-    "thumbnail": "https://lorempixel.com/300/300/"
-  },
-  {
-    "name": "MySQL",
-    "thumbnail": "https://lorempixel.com/300/300/"
-  },
-  {
-    "name": "Java",
-    "thumbnail": "https://lorempixel.com/300/300/"
-  },
-  {
-    "name": "Django",
-    "thumbnail": "https://lorempixel.com/300/300/"
-  }
-]
-
+{
+  "title": "Languages",
+  "items" : [
+    {
+      "name": "C",
+      "img_src": "/static/images/C.png"
+    },
+    {
+      "name": "Java",
+      "img_src": "/static/images/java.png"
+    },
+    {
+      "name": "Python",
+      "img_src": "/static/images/python.png"
+    },
+    {
+      "name": "Javascript",
+      "img_src": "/static/images/javascript.png"
+    }
+  ]
+}
