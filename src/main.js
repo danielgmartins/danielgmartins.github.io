@@ -8,7 +8,9 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-import '../static/vendor/font-awesome/svg-with-js/js/fontawesome-all'
+import '../static/vendor/font-awesome/svg-with-js/js/fa-solid.min.js'
+import '../static/vendor/font-awesome/svg-with-js/js/fa-brands.min.js'
+import '../static/vendor/font-awesome/svg-with-js/js/fontawesome.min.js'
 
 // import KsVueScrollmagic from 'ks-vue-scrollmagic'
 
