@@ -48,7 +48,7 @@
       </b-card-group>
     </b-container>
     <b-container class="description">
-      <h2> Tools and Framworks </h2>
+      <h2> Tools and Frameworks </h2>
       <b-card-group deck class="mb-3">
           <b-card class="skill-card">
             <img class="img-fluid" src="../assets/images/django.png"/>
