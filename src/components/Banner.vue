@@ -20,4 +20,8 @@ export default {
     font-size: 25px;
   }
 }
+span {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
 </style>
